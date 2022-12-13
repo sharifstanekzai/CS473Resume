@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CS473Resume</string>
+    <string name="homeTab">Home</string>
+    <string name="aboutTab">About Me</string>
+    <string name="experienceTab">Experience</string>
+    <string name="contactTab">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Mohammad Sharif Stanekzai</string>
+    <string name="title">.NET Developer</string>
+    <string name="careerNote">Technically astute C# developer with over a decade of experience playing key role in enterprise database development and deployment as leader of elite technical teams. Hands-on expertise in back-end development, and software engineering. Adept and personable communicator with experience leading technical and cross-functional teams through all stages of software development lifecycle.</string>
+    <string name="experience">.NET Developer, Sr. IT Expert, ICT and Database Manager, Database Specialist</string>
+
+</resources>

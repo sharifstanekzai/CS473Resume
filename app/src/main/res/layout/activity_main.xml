@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@android:drawable/arrow_down_float"
+            app:title="Resume"
+            app:menu="@menu/top_app_bar"
+            >
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        >
+        <Button
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="@string/homeTab"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="Home"
+            />
+        <Button
+            android:id="@+id/tabABoutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/aboutTab"
+            android:onClick="About"
+            />
+        <Button
+            android:id="@+id/tabWork"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/experienceTab"
+            android:onClick="Experience"
+            />
+        <Button
+            android:id="@+id/tabContact"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/contactTab"
+            android:onClick="Contact"
+            />
+    </LinearLayout>
+
+<!-- <FrameLayout-->
+<!--     android:id="@+id/frameLayout"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="match_parent"-->
+<!--     android:layout_marginTop="120dp"-->
+<!--     >-->
+<!--<fragment-->
+<!--    android:id="@+id/defaultFrame"-->
+<!--    android:name="com.example.cs473resume.HomeFragment"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"></fragment>-->
+<!-- </FrameLayout>-->
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragmentContainer"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="120dp"
+    android:layout_height="wrap_content"
+    android:name="com.example.cs473resume.HomeFragment">
+
+</androidx.fragment.app.FragmentContainerView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
